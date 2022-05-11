@@ -1,14 +1,36 @@
 import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import Card from './components/card'
+import * as ROUTES from './constants/routes'
+import Home from './pages/home'
+import Apartment from './pages/apartment'
+import Error404 from './pages/404'
 
 function App() {
     return (
-        <div className="App">
-            <Card>
-                <Card.Title> je suis un titre </Card.Title>
-            </Card>
-        </div>
+        <Router>
+            <Routes>
+            
+                <Route exact path={ROUTES.HOME} element={
+                    <>
+                        <Home/>
+                    </>
+                }/>
+
+                <Route exact path={ROUTES.APARTMENT} element={
+                    <>
+                        <Apartment/>
+                    </>
+                }/>
+
+                <Route exact path={ROUTES.ERROR404} element={
+                    <>
+                        <Error404/>
+                    </>
+                }/>
+            </Routes>
+
+        </Router>
     )
 }
 
