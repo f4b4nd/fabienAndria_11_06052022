@@ -2,36 +2,25 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import * as ROUTES from './constants/routes'
+
 import Home from './pages/home'
 import Apartment from './pages/apartment'
-import Error404 from './pages/404'
+import NotFound from './pages/notFound'
 
-function App() {
+export default function App () {
     return (
         <Router>
+
             <Routes>
             
-                <Route exact path={ROUTES.HOME} element={
-                    <>
-                        <Home/>
-                    </>
-                }/>
+                <Route exact path={ROUTES.HOME} element={<Home/>} />
 
-                <Route exact path={ROUTES.APARTMENT} element={
-                    <>
-                        <Apartment/>
-                    </>
-                }/>
+                <Route exact path={ROUTES.APARTMENT} element={<Apartment/>} />
 
-                <Route exact path={ROUTES.ERROR404} element={
-                    <>
-                        <Error404/>
-                    </>
-                }/>
+                <Route path="*" element={<NotFound/>} />
+
             </Routes>
 
         </Router>
     )
 }
-
-export default App

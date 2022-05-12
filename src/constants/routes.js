@@ -1,3 +1,3 @@
 export const HOME = '/'
 export const APARTMENT = '/apartment'
-export const ERROR404 = '/404'
+export const NOT_FOUND_404 = '/404'
