@@ -9,5 +9,5 @@ export const Container = styled.article`
 `
 
 export const Title = styled.p`
-    font-size: 24px;
+    font-size: 1.5em;
 `

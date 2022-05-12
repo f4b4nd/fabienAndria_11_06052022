@@ -9,7 +9,7 @@ export default function FooterContainer () {
 
                 <Logo href="#"/>
 
-                <Footer.Copyright> © 2020 Kasa. All rights reserved </Footer.Copyright>
+                <Footer.Text> © 2020 Kasa. All rights reserved </Footer.Text>
 
             </Footer.Column>
 

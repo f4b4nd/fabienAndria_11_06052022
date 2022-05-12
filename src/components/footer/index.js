@@ -1,4 +1,4 @@
-import { Container, Column, Copyright } from "./styles/footer"
+import { Container, Column, Text } from "./styles/footer"
 
 export default function Footer ({children, ...restProps}) {
     return (
@@ -12,8 +12,8 @@ Footer.Column = function FooterColumn({children, ...restProps}) {
     )
 }
 
-Footer.Copyright = function FooterCopyright({children}) {
+Footer.Text = function FooterText({children}) {
     return (
-        <Copyright> {children} </Copyright>
+        <Text> {children} </Text>
     )
 }

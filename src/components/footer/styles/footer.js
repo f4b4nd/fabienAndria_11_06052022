@@ -12,6 +12,6 @@ export const Column = styled.div`
     align-items: center;
 `
 
-export const Copyright = styled.p`
+export const Text = styled.p`
     font-size: 1.1em;
 `
