@@ -1,4 +1,3 @@
-
 import { Container, Column, Copyright } from "./styles/footer"
 
 export default function Footer ({children, ...restProps}) {

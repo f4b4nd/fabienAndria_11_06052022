@@ -3,8 +3,10 @@ import redLogo from '../../assets/logo/kasa_red.png'
 
 import { Container, Icon } from './styles/logo'
 
-export default function Logo({children, ...restProps}) {
+export default function Logo({color}) {
     return (
-        <Container {...restProps} > K <Icon src={whiteLogo}/> sa </Container>
+        <Container> 
+            K <Icon src={color === 'red' ? redLogo : whiteLogo}/> sa 
+        </Container>
     )
 }

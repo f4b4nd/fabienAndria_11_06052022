@@ -6,8 +6,11 @@ export function FooterContainer () {
         <Footer>
 
             <Footer.Column>
-                <Logo />
+
+                <Logo/>
+
                 <Footer.Copyright> © 2020 Kasa. All rights reserved </Footer.Copyright>
+
             </Footer.Column>
 
         </Footer>
