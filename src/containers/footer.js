@@ -1,13 +1,13 @@
 import Footer from "../components/footer"
 import Logo from "../components/logo"
 
-export function FooterContainer () {
+export default function FooterContainer () {
     return (
         <Footer>
 
             <Footer.Column>
 
-                <Logo/>
+                <Logo href="#"/>
 
                 <Footer.Copyright> © 2020 Kasa. All rights reserved </Footer.Copyright>
 
