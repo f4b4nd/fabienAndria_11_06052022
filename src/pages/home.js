@@ -2,7 +2,7 @@ import CardContainer from '../containers/card'
 import HeaderContainer  from '../containers/header'
 import FooterContainer from '../containers/footer'
 
-import useContent from '../hooks/use-content'
+import useContent from '../hooks/useContent'
 
 export default function Home () {
 
@@ -11,11 +11,7 @@ export default function Home () {
     return (
         <>  
             <HeaderContainer />
-            <CardContainer cards={houses} />
-            <p> 
-                home 
-            </p>
-        
+            <CardContainer cards={houses} />        
             <FooterContainer />
         </>
     )

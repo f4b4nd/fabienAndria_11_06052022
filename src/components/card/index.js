@@ -1,8 +1,14 @@
-import { Container, Title } from "./styles/card"
+import { Group, Container, Title } from "./styles/card"
 
 export default function Card({children, ...restProps}) {
     return (
         <Container {...restProps}> {children} </Container>
+    )
+}
+
+Card.Group = function CardGroup({children, ...restProps}) {
+    return (
+        <Group {...restProps}> {children} </Group>
     )
 }
 
