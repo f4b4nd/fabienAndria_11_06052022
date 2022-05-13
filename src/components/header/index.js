@@ -1,6 +1,7 @@
 import { Container } from "./styles/header"
 import Logo from "../logo"
 import Navbar  from "../navbar"
+import * as ROUTES from '../../constants/routes'
 
 export default function Header () {
     return (
@@ -9,12 +10,12 @@ export default function Header () {
             <Navbar>
 
                 <Navbar.Column>
-                    <Logo href="#" color="red" />
+                    <Logo to={ROUTES.HOME} color="red" />
                 </Navbar.Column>
 
                 <Navbar.Column>
-                    <Navbar.Link href="#"> Accueil </Navbar.Link>
-                    <Navbar.Link href="#"> A propos </Navbar.Link>
+                    <Navbar.Link to={ROUTES.HOME}> Accueil </Navbar.Link>
+                    <Navbar.Link to="#"> A propos </Navbar.Link>
                 </Navbar.Column>
 
              </Navbar>

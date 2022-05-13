@@ -1,4 +1,4 @@
-import { Container, Column, Link } from "./styles/navbar"
+import { Container, Column, StyledLink } from "./styles/navbar"
 
 export default function Navbar ({children, ...restProps}) {
     return (
@@ -10,6 +10,6 @@ Navbar.Column = function NavbarColumn ({children}) {
     return <Column> {children} </Column>
 }
 
-Navbar.Link = function NavbarLink ({children, ...restProps}) {
-    return <Link {...restProps}> {children} </Link>
+Navbar.Link = function NavbarLink ({children, to, ...restProps}) {
+    return <StyledLink to={to} {...restProps}> {children} </StyledLink>
 }

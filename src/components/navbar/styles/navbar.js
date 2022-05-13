@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
+
 import { COLORS } from '../../../constants'
 
 export const Container = styled.nav`
@@ -9,6 +11,6 @@ export const Container = styled.nav`
 
 export const Column = styled.div``
 
-export const Link = styled.a`
+export const StyledLink = styled(Link)`
     color: ${COLORS.red}
 `
