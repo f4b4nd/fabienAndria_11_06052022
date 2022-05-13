@@ -10,13 +10,11 @@ export default function GalleryContainer ({images, alt}) {
 
         if (images.length <= 1) return
 
-        if (imageIndex === 0) {
-            const lastImageIndex = images.length - 1
-            setImageIndex(lastImageIndex)
-            return
-        }
+        const lastImageIndex = images.length - 1
 
-        setImageIndex(imageIndex - 1)
+        const previousImageIndex = imageIndex === 0 ? lastImageIndex : imageIndex - 1
+
+        setImageIndex(previousImageIndex)
     
     }
 
@@ -26,12 +24,9 @@ export default function GalleryContainer ({images, alt}) {
 
         const lastImageIndex = images.length - 1
 
-        if (imageIndex === lastImageIndex) {
-            setImageIndex(0)
-            return
-        }
+        const nextImageIndex = imageIndex === lastImageIndex ? 0 : imageIndex + 1
 
-        setImageIndex(imageIndex + 1)
+        setImageIndex(nextImageIndex)
     
     }
 

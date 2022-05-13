@@ -6,10 +6,10 @@ export default function Navbar ({children}) {
     )
 }
 
-Navbar.Column = function NavbarColumn ({children}) {
+Navbar.Column = function ({children}) {
     return <Column> {children} </Column>
 }
 
-Navbar.Link = function NavbarLink ({children, to, ...restProps}) {
+Navbar.Link = function ({children, to, ...restProps}) {
     return <StyledLink to={to} {...restProps}> {children} </StyledLink>
 }

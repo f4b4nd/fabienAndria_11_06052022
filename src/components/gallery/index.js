@@ -13,7 +13,7 @@ Gallery.Image = function GalleryImage({...restProps}) {
     return <Image {...restProps}/>
 }
 
-Gallery.LeftArrow = function GalleryLeftArrow({children, ...restProps}) {
+Gallery.LeftArrow = function GalleryLeftArrow({...restProps}) {
     return (
         <LeftArrow {...restProps}> 
             <ChevronLeft {...restProps} /> 
@@ -21,7 +21,7 @@ Gallery.LeftArrow = function GalleryLeftArrow({children, ...restProps}) {
     )
 }
 
-Gallery.RightArrow = function GalleryRightArrow({children, ...restProps}) {
+Gallery.RightArrow = function GalleryRightArrow({...restProps}) {
     return (
         <RightArrow {...restProps}> 
             <ChevronLeft rotate={'180deg'} {...restProps}/> 

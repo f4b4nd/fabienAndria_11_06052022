@@ -4,6 +4,6 @@ export default function Tag({children}) {
     return <Container> {children} </Container>
 }
 
-Tag.Group = function TagGroup({children}) {
+Tag.Group = function ({children}) {
     return <Group> {children} </Group>
 }

@@ -6,10 +6,10 @@ export default function Footer ({children}) {
     )
 }
 
-Footer.Column = function FooterColumn({children}) {
+Footer.Column = function ({children}) {
     return <Column> {children} </Column>
 }
 
-Footer.Text = function FooterText({children}) {
+Footer.Text = function ({children}) {
     return <Text> {children} </Text>
 }
