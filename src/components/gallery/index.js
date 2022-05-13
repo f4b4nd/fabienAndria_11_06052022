@@ -1,4 +1,5 @@
 import { Container, Inner, Image, LeftArrow, RightArrow } from "./styles/gallery"
+import Chevron from "../chevron"
 
 export default function Gallery({children, ...restProps}) {
     return (
@@ -13,9 +14,17 @@ Gallery.Image = function GalleryImage({...restProps}) {
 }
 
 Gallery.LeftArrow = function GalleryLeftArrow({children, ...restProps}) {
-    return <LeftArrow {...restProps}> {children} </LeftArrow>
+    return (
+        <LeftArrow {...restProps}> 
+            <Chevron {...restProps} /> 
+        </LeftArrow>
+    )
 }
 
 Gallery.RightArrow = function GalleryRightArrow({children, ...restProps}) {
-    return <RightArrow {...restProps}> {children} </RightArrow>
+    return (
+        <RightArrow {...restProps}> 
+            <Chevron rotate={'180deg'} {...restProps}/> 
+        </RightArrow>
+    )
 }

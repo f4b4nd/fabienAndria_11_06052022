@@ -35,18 +35,18 @@ export default function GalleryContainer ({images, alt}) {
     
     }
 
-
     return (
         
-        <Gallery> 
-            <Gallery.LeftArrow onClick={handleClickLeftArrow} />
+        <Gallery>
+
+            <Gallery.LeftArrow onClick={handleClickLeftArrow} size={'30px'} />
             
             <Gallery.Image 
                 src={images[imageIndex]}
                 alt={alt}
             />
             
-            <Gallery.RightArrow onClick={handleClickRightArrow} />
+            <Gallery.RightArrow onClick={handleClickRightArrow} size={'30px'} />
 
         </Gallery>
     )

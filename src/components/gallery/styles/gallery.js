@@ -22,21 +22,17 @@ export const Image = styled.img`
 `
 
 export const LeftArrow = styled.div`
-    height: 50px;
-    width: 50px;
     position: absolute;
     top: 100px;
     left: 10px;
-    
-    border: 1px solid black;
+    color: white;
+    display: block;    
+    cursor: pointer;
 `
 
 export const RightArrow = styled.div`
-    height: 50px;
-    width: 50px;
     position: absolute;
     top: 100px;
     right: 10px;
-
-    border: 1px solid black;
+    cursor: pointer;
 `
