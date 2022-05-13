@@ -10,6 +10,7 @@ export const Inner = styled.div`
     max-height: 250px;
     height: 250px;
     overflow: hidden;
+    border-radius: 20px;
 `
 
 export const Image = styled.img`
