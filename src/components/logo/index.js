@@ -1,7 +1,7 @@
 import whiteLogo from '../../assets/logo/kasa_white.png'
 import redLogo from '../../assets/logo/kasa_red.png'
 
-import { Container, StyledLink, Icon } from './styles/logo'
+import { Container, StyledLink, Icon } from './style'
 
 export default function Logo({color, to, ...restProps}) {
     return (

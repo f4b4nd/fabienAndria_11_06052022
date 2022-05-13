@@ -1,4 +1,4 @@
-import { Container, Column, StyledLink } from "./styles/navbar"
+import { Container, Column, StyledLink } from "./style"
 
 export default function Navbar ({children, ...restProps}) {
     return (

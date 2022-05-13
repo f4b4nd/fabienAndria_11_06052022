@@ -1,4 +1,4 @@
-import { Container, Group } from "./styles/tag"
+import { Container, Group } from "./style"
 
 export default function Tag({children}) {
     return <Container> {children} </Container>

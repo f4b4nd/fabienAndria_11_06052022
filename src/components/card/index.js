@@ -1,4 +1,4 @@
-import { Group, Container, StyledLink, Title } from "./styles/card"
+import { Group, Container, StyledLink, Title } from "./style"
 
 export default function Card({children, ...restProps}) {
     return (

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Link } from "react-router-dom"
 
-import { COLORS, BREAKPOINTS } from '../../../constants'
+import { COLORS, BREAKPOINTS } from '../../constants'
 
 
 export const Group = styled.div`

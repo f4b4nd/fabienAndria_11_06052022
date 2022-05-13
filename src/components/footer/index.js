@@ -1,4 +1,4 @@
-import { Container, Column, Text } from "./styles/footer"
+import { Container, Column, Text } from "./style"
 
 export default function Footer ({children, ...restProps}) {
     return (

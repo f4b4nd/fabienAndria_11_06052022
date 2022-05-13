@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-import { COLORS } from '../../../constants'
+import { COLORS } from '../../constants'
 
 export const Container = styled.div`
     font-size: 1.5em;

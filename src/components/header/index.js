@@ -1,4 +1,4 @@
-import { Container } from "./styles/header"
+import { Container } from "./style"
 import Logo from "../logo"
 import Navbar  from "../navbar"
 import * as ROUTES from '../../constants/routes'

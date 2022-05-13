@@ -1,5 +1,5 @@
-import { Container, Inner, Image, LeftArrow, RightArrow } from "./styles/gallery"
-import Chevron from "../chevron"
+import { Container, Inner, Image, LeftArrow, RightArrow } from "./style"
+import ChevronLeft from "../chevron"
 
 export default function Gallery({children, ...restProps}) {
     return (
@@ -16,7 +16,7 @@ Gallery.Image = function GalleryImage({...restProps}) {
 Gallery.LeftArrow = function GalleryLeftArrow({children, ...restProps}) {
     return (
         <LeftArrow {...restProps}> 
-            <Chevron {...restProps} /> 
+            <ChevronLeft {...restProps} /> 
         </LeftArrow>
     )
 }
@@ -24,7 +24,7 @@ Gallery.LeftArrow = function GalleryLeftArrow({children, ...restProps}) {
 Gallery.RightArrow = function GalleryRightArrow({children, ...restProps}) {
     return (
         <RightArrow {...restProps}> 
-            <Chevron rotate={'180deg'} {...restProps}/> 
+            <ChevronLeft rotate={'180deg'} {...restProps}/> 
         </RightArrow>
     )
 }
