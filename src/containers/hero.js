@@ -1,12 +1,13 @@
 import Tag from "../components/tag"
 
 export default function HeroContainer({house}) {
+
     const tags = house.tags || []
-    
+
     return (
         <>  
             <Tag.Group>
-                {tags.map(tag => <Tag> {tag} </Tag>)}
+                {tags.map(tag => <Tag key={tag}> {tag} </Tag>)}
             </Tag.Group>
 
             <p>  Title {house.title} </p>
