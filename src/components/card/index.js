@@ -6,14 +6,14 @@ export default function Card({children, ...restProps}) {
     )
 }
 
-Card.Group = function CardGroup ({children, ...restProps}) {
-    return <Group {...restProps}> {children} </Group>
+Card.Group = function CardGroup ({children}) {
+    return <Group> {children} </Group>
 }
 
 Card.Link = function CardStyledLink ({children, ...restProps}) {
     return <StyledLink {...restProps}> {children} </StyledLink>
 }
 
-Card.Title = function CardTitle ({children, ...restProps}) {
-    return <Title {...restProps}> {children} </Title>
+Card.Title = function CardTitle ({children}) {
+    return <Title> {children} </Title>
 }

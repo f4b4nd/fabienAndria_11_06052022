@@ -3,7 +3,7 @@ import redLogo from '../../assets/logo/kasa_red.png'
 
 import { Container, StyledLink, Icon } from './style'
 
-export default function Logo({color, to, ...restProps}) {
+export default function Logo({color, to}) {
     return (
         <Container> 
             <StyledLink color={color} to={to} > 

@@ -6,8 +6,8 @@ export default function Footer ({children, ...restProps}) {
     )
 }
 
-Footer.Column = function FooterColumn({children, ...restProps}) {
-    return <Column {...restProps} > {children} </Column>
+Footer.Column = function FooterColumn({children}) {
+    return <Column> {children} </Column>
 }
 
 Footer.Text = function FooterText({children}) {
