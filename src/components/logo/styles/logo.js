@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { COLORS } from '../../../constants/colors'
+import { COLORS } from '../../../constants'
 
 export const Container = styled.div`
     font-size: 1.5em;

@@ -7,13 +7,9 @@ export default function Footer ({children, ...restProps}) {
 }
 
 Footer.Column = function FooterColumn({children, ...restProps}) {
-    return (
-        <Column {...restProps} > {children} </Column>
-    )
+    return <Column {...restProps} > {children} </Column>
 }
 
 Footer.Text = function FooterText({children}) {
-    return (
-        <Text> {children} </Text>
-    )
+    return <Text> {children} </Text>
 }

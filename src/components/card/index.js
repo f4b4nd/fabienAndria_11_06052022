@@ -1,4 +1,4 @@
-import { Group, Container, Title } from "./styles/card"
+import { Group, Container, StyledLink, Title } from "./styles/card"
 
 export default function Card({children, ...restProps}) {
     return (
@@ -6,12 +6,14 @@ export default function Card({children, ...restProps}) {
     )
 }
 
-Card.Group = function CardGroup({children, ...restProps}) {
-    return (
-        <Group {...restProps}> {children} </Group>
-    )
+Card.Group = function CardGroup ({children, ...restProps}) {
+    return <Group {...restProps}> {children} </Group>
 }
 
-Card.Title = function CardTitle({children, ...restProps}) {
+Card.Link = function CardStyledLink ({children, ...restProps}) {
+    return <StyledLink {...restProps}> {children} </StyledLink>
+}
+
+Card.Title = function CardTitle ({children, ...restProps}) {
     return <Title {...restProps}> {children} </Title>
 }

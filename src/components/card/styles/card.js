@@ -1,31 +1,37 @@
 import styled from 'styled-components'
-import { COLORS } from '../../../constants/colors'
-import { BREAKPOINTS } from '../../../constants/breakpoints'
+import { Link } from "react-router-dom"
+
+import { COLORS, BREAKPOINTS } from '../../../constants'
+
 
 export const Group = styled.div`
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    row-gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+
     background-color: ${COLORS.lightgrey};
-    padding: 1em;
+    padding: 2em 1em;
+
+    @media screen and (min-width: ${BREAKPOINTS['md-min-width']}) and (max-width: ${BREAKPOINTS['md-max-width']}) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     @media screen and (max-width: ${BREAKPOINTS['sm-max-width']}) {
-        background-color: none;
+        background-color: transparent;
+        grid-template-columns: 1fr;
     }
 `
 
 export const Container = styled.article`
-    flex-basis: 30%;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     background: ${COLORS.red};
     height: 200px;
+`
 
-    @media screen and (max-width: ${BREAKPOINTS['sm-max-width']}) {
-        flex-basis: 100%;
-    }
+export const StyledLink = styled(Link)`
+    text-decoration: none;
 `
 
 export const Title = styled.p`

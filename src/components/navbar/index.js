@@ -7,13 +7,9 @@ export default function Navbar ({children, ...restProps}) {
 }
 
 Navbar.Column = function NavbarColumn ({children}) {
-    return (
-        <Column> {children} </Column>
-    )
+    return <Column> {children} </Column>
 }
 
 Navbar.Link = function NavbarLink ({children, ...restProps}) {
-    return (
-        <Link {...restProps}> {children} </Link>
-    )
+    return <Link {...restProps}> {children} </Link>
 }

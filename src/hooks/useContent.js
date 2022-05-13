@@ -5,10 +5,10 @@ export default function useContent (target) {
     const [content, setContent] = useState([])
 
     useEffect(() => {
-        fetch("./logements.json", {
+        fetch("http://localhost:3000/logements.json", {
             headers : { 
                 'Content-Type': 'application/json',
-                'Accept': 'application/json'
+                'Accept': 'application/json',
             }
             })
             .then(response => response.json())
@@ -19,4 +19,5 @@ export default function useContent (target) {
     }, [])
 
     return {[target]: content}
+
 }
