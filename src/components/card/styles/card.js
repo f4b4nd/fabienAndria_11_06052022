@@ -32,6 +32,7 @@ export const Container = styled.article`
 
 export const StyledLink = styled(Link)`
     text-decoration: none;
+    color: black;
 `
 
 export const Title = styled.p`

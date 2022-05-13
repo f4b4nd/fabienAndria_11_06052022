@@ -3,6 +3,7 @@ import useContent from '../hooks/useContent'
 
 import HeaderContainer  from '../containers/header'
 import FooterContainer from "../containers/footer"
+import GalleryContainer from "../containers/gallery"
 
 export default function House () {
 
@@ -14,10 +15,17 @@ export default function House () {
     return (
         <>
             <HeaderContainer />
+
+            <GalleryContainer 
+                images={house.pictures || []}
+                alt={house.title}
+            />
+
             <p>  Title {house.title} </p>
             <p>  Description {house.description} </p>
             <p>  Location {house.location} </p>
             <p>  Rating {house.rating} </p>
+
             <FooterContainer />
         </>
     )
