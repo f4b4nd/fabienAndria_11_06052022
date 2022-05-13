@@ -1,9 +1,9 @@
 import { Container, Inner, Image, LeftArrow, RightArrow } from "./style"
 import ChevronLeft from "../chevron"
 
-export default function Gallery({children, ...restProps}) {
+export default function Gallery({children}) {
     return (
-        <Container {...restProps}>  
+        <Container>  
             <Inner> {children} </Inner>
         </Container>
     )

@@ -1,8 +1,8 @@
 import { Container, Column, StyledLink } from "./style"
 
-export default function Navbar ({children, ...restProps}) {
+export default function Navbar ({children}) {
     return (
-        <Container {...restProps} > {children}  </Container>
+        <Container> {children}  </Container>
     )
 }
 

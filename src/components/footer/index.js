@@ -1,8 +1,8 @@
 import { Container, Column, Text } from "./style"
 
-export default function Footer ({children, ...restProps}) {
+export default function Footer ({children}) {
     return (
-        <Container {...restProps} > {children} </Container>
+        <Container> {children} </Container>
     )
 }
 
