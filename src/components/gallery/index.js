@@ -9,11 +9,11 @@ export default function Gallery({children}) {
     )
 }
 
-Gallery.Image = function GalleryImage({...restProps}) {
+Gallery.Image = function ({...restProps}) {
     return <Image {...restProps}/>
 }
 
-Gallery.LeftArrow = function GalleryLeftArrow({...restProps}) {
+Gallery.LeftArrow = function ({...restProps}) {
     return (
         <LeftArrow {...restProps}> 
             <ChevronLeft {...restProps} /> 
@@ -21,7 +21,7 @@ Gallery.LeftArrow = function GalleryLeftArrow({...restProps}) {
     )
 }
 
-Gallery.RightArrow = function GalleryRightArrow({...restProps}) {
+Gallery.RightArrow = function ({...restProps}) {
     return (
         <RightArrow {...restProps}> 
             <ChevronLeft rotate={'180deg'} {...restProps}/> 

@@ -26,3 +26,7 @@ export const Body = styled.div`
 `
 
 export const Text = styled.p``
+
+export const List = styled.ul``
+
+export const ItemList = styled.li``
