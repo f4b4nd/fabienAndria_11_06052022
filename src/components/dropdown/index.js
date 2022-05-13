@@ -4,34 +4,32 @@ import { Container, Header, Title, Body, Text } from "./style"
 import ChevronLeft from "../chevron"
 
 
-export default function Dropdown ({children}) {
+export default function Dropdown ({title, text}) {
 
     const [isActive, setIsActive] = useState(false)
 
-    const onClick = (isActive => {setIsActive(!isActive); console.log('cli')})
-
     return (
-        <Container opened={isActive} onClick={onClick} >     
-            {children}
+        <Container >
+
+            <Header  > 
+
+                <Title> {title} </Title>
+
+                <ChevronLeft 
+                    rotate={isActive ? '90deg' : '-90deg'} 
+                    size={'15px'} 
+                    onClick={() => setIsActive(!isActive)} 
+                />
+
+            </Header>
+
+            <Body isActive={isActive}> 
+
+                <Text> {text} </Text>
+
+            </Body>
+
         </Container>
     )
 
-}
-
-Dropdown.Header = function ({onClick, children}) {
-    
-    return (
-        <Header> 
-            <Title> {children} </Title>
-            <ChevronLeft rotate={'-90deg'} size={'15px'} onClick={onClick} />
-        </Header>
-    )
-}
-
-Dropdown.Body = function ({children}) {
-    return (
-        <Body> 
-            <Text> {children} </Text> 
-        </Body>
-    )
 }

@@ -11,10 +11,7 @@ export default function HeroContainer({house}) {
                 {tags.map(tag => <Tag key={tag}> {tag} </Tag>)}
             </Tag.Group>
 
-            <Dropdown>
-                <Dropdown.Header> Description </Dropdown.Header>
-                <Dropdown.Body> {house.description} </Dropdown.Body>
-            </Dropdown>
+            <Dropdown title={house.title} text={house.description} />
             
             <p>  Title {house.title} </p>
             <p>  Description {house.description} </p>

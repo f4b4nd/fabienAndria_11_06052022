@@ -16,6 +16,8 @@ export const Header = styled.div`
 export const Title = styled.span``
 
 export const Body = styled.div`
+    display: ${({isActive}) => isActive ? 'block' : 'none'};
+    
     padding: 1em;
     color: ${COLORS.red};
     background-color: ${COLORS.lightgrey} ;

@@ -27,12 +27,10 @@ export const LeftArrow = styled.div`
     left: 10px;
     color: white;
     display: block;    
-    cursor: pointer;
 `
 
 export const RightArrow = styled.div`
     position: absolute;
     top: 100px;
     right: 10px;
-    cursor: pointer;
 `
