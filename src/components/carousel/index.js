@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import { Container, Inner, Image, LeftArrow, RightArrow, Counter } from "./style"
+import { Container, Inner, Image, LeftArrow, RightArrow, IndexIndicator } from "./style"
 import Chevron from "../chevron"
 
 export default function Carousel ({images, alt}) {
@@ -36,7 +36,7 @@ export default function Carousel ({images, alt}) {
                 
                 <Image src={images[imageIndex]} alt={alt} />
                 
-                <Carousel.Counter currentImageIndex={imageIndex} imagesCount={images.length}/>
+                <Carousel.IndexIndicator imageIndex={imageIndex} imagesCount={images.length}/>
                 
                 {images.length > 1 && <Carousel.RightArrow onClick={handleClickRightArrow} size={'30px'} />}
 
@@ -44,6 +44,7 @@ export default function Carousel ({images, alt}) {
             
         </Container>
     )
+
 }
 
 
@@ -63,12 +64,12 @@ Carousel.RightArrow = function ({...restProps}) {
     )
 }
 
-Carousel.Counter = function ({currentImageIndex, imagesCount}) {
+Carousel.IndexIndicator = function ({imageIndex, imagesCount}) {
 
-    const displayedIndex = currentImageIndex < imagesCount ? currentImageIndex + 1 : imagesCount
+    const displayedIndex = imageIndex < imagesCount ? imageIndex + 1 : imagesCount
 
     return (
-        <Counter> {displayedIndex} / {imagesCount} </Counter>
+        <IndexIndicator> {displayedIndex} / {imagesCount} </IndexIndicator>
     )
 
 }

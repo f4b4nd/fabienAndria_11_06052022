@@ -35,7 +35,7 @@ export const RightArrow = styled.div`
     transform: translateY(-50%);
 `
 
-export const Counter = styled.span`
+export const IndexIndicator = styled.span`
     position: absolute;
     bottom: 1%;
     left: 50%;

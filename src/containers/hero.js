@@ -11,9 +11,9 @@ export default function HeroContainer({house}) {
     return (
         <>  
 
-            <p> Title {house.title} </p>
+            <p> {house.title} </p>
             
-            <p>  Location {house.location} </p>
+            <p> {house.location} </p>
 
             <UserCard name={house.host?.name || ''} src={house.host?.picture || ''} />
 
