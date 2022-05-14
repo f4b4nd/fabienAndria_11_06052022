@@ -19,7 +19,7 @@ export default function HeroContainer({house}) {
             <Dropdown title="Equipements" >
                 <Dropdown.ListContent>
                     {equipments.map(equipment => (
-                        <Dropdown.ItemList> {equipment} </Dropdown.ItemList>
+                        <Dropdown.ItemList key={equipment}> {equipment} </Dropdown.ItemList>
                     ))}
                 </Dropdown.ListContent>
             </Dropdown>

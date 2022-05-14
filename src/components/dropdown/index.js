@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 import { Container, Header, Title, Body, Text, List, ItemList } from "./style"
-import ChevronLeft from "../chevron"
+import Chevron from "../chevron"
 
 
 export default function Dropdown ({title, children}) {
@@ -9,14 +9,14 @@ export default function Dropdown ({title, children}) {
     const [isActive, setIsActive] = useState(false)
 
     return (
-        <Container >
+        <Container>
 
-            <Header  > 
+            <Header> 
 
                 <Title> {title} </Title>
 
-                <ChevronLeft 
-                    rotate={isActive ? '90deg' : '-90deg'} 
+                <Chevron 
+                    className={isActive ? 'chevron-up' : 'chevron-down'} 
                     size={'15px'} 
                     onClick={() => setIsActive(!isActive)} 
                 />
@@ -26,7 +26,7 @@ export default function Dropdown ({title, children}) {
             <Body isActive={isActive}>
                 
                 {children}
-                
+
             </Body>
 
         </Container>
@@ -35,14 +35,14 @@ export default function Dropdown ({title, children}) {
 }
 
 
-Dropdown.TextContent = function({children}) {
+Dropdown.TextContent = function ({children}) {
     return <Text> {children} </Text>
 }
 
-Dropdown.ListContent = function({children}) {
+Dropdown.ListContent = function ({children}) {
     return <List> {children} </List>
 }
 
-Dropdown.ItemList = function({children}) {
+Dropdown.ItemList = function ({children}) {
     return <ItemList> {children} </ItemList>
 }
