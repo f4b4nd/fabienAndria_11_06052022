@@ -2,10 +2,14 @@ import styled from 'styled-components'
 
 import { COLORS } from '../../constants'
 
-export const Container = styled.div``
+export const Container = styled.div`
+    ${({width}) => width && `width : ${width}`};
+`
 
 export const Group = styled.div`
     display: flex;
+    ${({flexDirection}) => flexDirection && `flex-direction : ${flexDirection}`};
+    gap: 1em;
 `
 
 export const Header = styled.div`

@@ -1,9 +1,9 @@
 import chevronLeft from '../../assets/icons/chevron-left.png'
 import { Container, Image } from './style'
 
-export default function Chevron ({size, ...restProps}) {
+export default function Chevron ({...restProps}) {
     return (
-        <Container size={size} {...restProps}>
+        <Container {...restProps}>
             
             <Image src={chevronLeft} />
 

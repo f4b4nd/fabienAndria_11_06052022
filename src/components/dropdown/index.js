@@ -4,12 +4,12 @@ import { Container, Group, Header, Title, Body, Text, List, ItemList } from "./s
 import Chevron from "../chevron"
 
 
-export default function Dropdown ({title, children}) {
+export default function Dropdown ({title, children, ...restProps}) {
 
     const [isActive, setIsActive] = useState(false)
 
     return (
-        <Container>
+        <Container {...restProps} >
 
             <Header>
 
