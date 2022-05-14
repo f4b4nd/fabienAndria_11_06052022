@@ -7,8 +7,7 @@ export const Container = styled.div`
 
 export const Inner = styled.div`
     max-width: 90vw;
-    max-height: 250px;
-    height: 250px;
+    height: 415px;
     overflow: hidden;
     border-radius: 20px;
     position: relative;
@@ -23,14 +22,24 @@ export const Image = styled.img`
 
 export const LeftArrow = styled.div`
     position: absolute;
-    top: 100px;
-    left: 10px;
-    color: white;
-    display: block;    
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+
 `
 
 export const RightArrow = styled.div`
     position: absolute;
-    top: 100px;
-    right: 10px;
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%);
+`
+
+export const Counter = styled.span`
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1em;
+    color: white;
 `

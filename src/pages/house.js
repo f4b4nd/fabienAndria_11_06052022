@@ -3,7 +3,7 @@ import useContent from '../hooks/useContent'
 
 import HeaderContainer  from '../containers/header'
 import FooterContainer from "../containers/footer"
-import GalleryContainer from "../containers/gallery"
+import Carousel from "../components/carousel"
 import HeroContainer from "../containers/hero"
 
 
@@ -18,7 +18,7 @@ export default function House () {
         <>
             <HeaderContainer />
 
-            <GalleryContainer 
+            <Carousel
                 images={house.pictures || []}
                 alt={house.title}
             />
