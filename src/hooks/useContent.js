@@ -5,11 +5,14 @@ export default function useContent (target) {
     const [content, setContent] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:3000/logements.json", {
+
+        const apiURL = process.env.REACT_APP_API_URL || 'http://localhost:3000'
+
+        fetch(`${apiURL}/logements.json`, {
             headers : { 
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
-            }
+        }
             })
             .then(response => response.json())
             .then(data => setContent(data))
