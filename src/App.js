@@ -10,7 +10,7 @@ import NotFound from './pages/notFound'
 
 export default function App () {
     return (
-        <Router>
+        <Router basename={process.env.REACT_APP_ROOT_FOLDER || '/'}>
 
             <Routes>
             
