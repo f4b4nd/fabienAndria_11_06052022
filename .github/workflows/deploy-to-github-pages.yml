@@ -1,29 +1,28 @@
-# https://dev.to/pierresaid/deploy-node-projects-to-github-pages-with-github-actions-4jco
+#  cf. https://dev.to/pierresaid/deploy-node-projects-to-github-pages-with-github-actions-4jco
 
 name: Deploy to GitHub Pages
-    on:
-      push:
-        branches:
-          - master
-    jobs:
-      build-and-deploy:
-        runs-on: ubuntu-latest
-        steps:
-        - name: Checkout
-          uses: actions/checkout@v1
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
 
-        - name: Build
-          run: |
-            npm install
-            npm run-script build
-          env:
-            REACT_APP_API_URL: ${{ secrets.REACT_APP_API_URL }}
-            REACT_APP_ROOT_FOLDER: ${{ secrets.REACT_APP_ROOT_FOLDER }}
+      - name: Build
+        run: |
+          npm install
+          npm run-script build
+        env:
+          REACT_APP_API_URL: ${{ secrets.REACT_APP_API_URL }}
+          REACT_APP_ROOT_FOLDER: ${{ secrets.REACT_APP_ROOT_FOLDER }}
 
-        - name: Deploy
-          uses: JamesIves/github-pages-deploy-action@4.1.5
-          with:
-            # TOKEN: ${{ secrets.TOKEN_KEY }}
-            BRANCH: gh-pages
-            FOLDER: dist
-
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          # TOKEN: ${{ secrets.TOKEN_KEY }}
+          BRANCH: gh-pages
+          FOLDER: dist
