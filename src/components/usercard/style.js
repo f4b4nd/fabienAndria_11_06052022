@@ -4,6 +4,8 @@ import { COLORS } from '../../constants'
 
 export const Container = styled.div`
     display: flex;
+    align-items: center;
+    column-gap: 0.5em;
 `
 
 export const Name = styled.span`

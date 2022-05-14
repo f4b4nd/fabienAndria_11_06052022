@@ -15,7 +15,7 @@ export const Image = styled.img`
 
 export const Text = styled.span`
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
     position: absolute;
     top: 50%;
     left: 50%;

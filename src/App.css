@@ -29,7 +29,7 @@ button {
 
 /* CUSTOM */
 
-header, footer {
+header, footer, main.house, main.about {
     padding: 1em;
 }
 
@@ -50,4 +50,44 @@ main.not-found h1 {
 main.not-found a:visited {
     color: #FF6060;
     text-decoration: underline;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.group .col {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+.group h1, .group h2 {
+    color: #FF6060;
+    margin: 0;
+}
+
+.group h1 {
+    font-size: 1.2em;
+    width: 80%;
+}
+
+.group h2 {
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 767px) {
+    .group {
+        flex-direction: column;
+        row-gap: 1em;
+    }
+}
+
+main.about {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
 }

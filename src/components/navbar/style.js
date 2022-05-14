@@ -9,7 +9,10 @@ export const Container = styled.nav`
     align-items: center;
 `
 
-export const Column = styled.div``
+export const Column = styled.div`
+    display: flex;
+    column-gap: 0.5em;
+`
 
 export const StyledLink = styled(Link)`
     color: ${COLORS.red};

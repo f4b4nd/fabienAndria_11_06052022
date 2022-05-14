@@ -4,11 +4,13 @@ import { COLORS } from '../../constants'
 export const Container = styled.span`
     background-color: ${COLORS.red};
     color: white;
-    border-radius: 5px;
-    padding: 0.3em;
+    border-radius: 8px;
+    font-size: 0.7em;
+    padding: 0.2em 0.4em;
 `
 
 export const Group = styled.div`
     display: flex;
-    column-gap: 10px;
+    flex-wrap: wrap;
+    gap: 0.5em;
 `

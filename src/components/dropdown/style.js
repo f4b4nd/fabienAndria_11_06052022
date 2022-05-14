@@ -1,15 +1,24 @@
 import styled from 'styled-components'
 
-import { COLORS } from '../../constants'
+import { BREAKPOINTS, COLORS } from '../../constants'
 
 export const Container = styled.div`
     ${({width}) => width && `width : ${width}`};
+
+    @media screen and (max-width: ${BREAKPOINTS['sm-max-width']}) {
+        width: 100%;
+    }
+
 `
 
 export const Group = styled.div`
     display: flex;
     ${({flexDirection}) => flexDirection && `flex-direction : ${flexDirection}`};
     gap: 1em;
+
+    @media screen and (max-width: ${BREAKPOINTS['sm-max-width']}) {
+        flex-direction: column;
+    }
 `
 
 export const Header = styled.div`

@@ -18,12 +18,14 @@ export default function House () {
         <>
             <HeaderContainer />
 
-            <Carousel
-                images={house.pictures || []}
-                alt={house.title}
-            />
+            <main className="house">
+                <Carousel
+                    images={house.pictures || []}
+                    alt={house.title}
+                />
 
-            <HeroContainer house={house} />
+                <HeroContainer house={house} />
+            </main>
 
             <FooterContainer />
         

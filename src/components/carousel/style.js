@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { BREAKPOINTS } from '../../constants'
 
 export const Container = styled.div`
     display: flex;
@@ -6,11 +7,15 @@ export const Container = styled.div`
 `
 
 export const Inner = styled.div`
-    max-width: 90vw;
-    height: 415px;
+    width: 100%;
+    height: 300px;
     overflow: hidden;
     border-radius: 20px;
     position: relative;
+
+    @media screen and (max-width: ${BREAKPOINTS['sm-max-width']}) {
+        height: 200px;
+    }
 `
 
 export const Image = styled.img`
