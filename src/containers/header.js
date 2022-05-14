@@ -17,7 +17,7 @@ export default function Header () {
 
                 <Navbar.Column>
                     <Navbar.Link to={ROUTES.HOME}> Accueil </Navbar.Link>
-                    <Navbar.Link to="#"> A propos </Navbar.Link>
+                    <Navbar.Link to={ROUTES.ABOUT}> A propos </Navbar.Link>
                 </Navbar.Column>
 
              </Navbar>

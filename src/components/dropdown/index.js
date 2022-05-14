@@ -9,11 +9,11 @@ export default function Dropdown ({title, children, ...restProps}) {
     const [isActive, setIsActive] = useState(false)
 
     return (
-        <Container {...restProps} >
+        <Container className={'dropdown'} {...restProps} >
 
-            <Header>
+            <Header className={'dropdown__header'}>
 
-                <Title> {title} </Title>
+                <Title className={'dropdown__title'}> {title} </Title>
 
                 <Chevron 
                     className={isActive ? 'chevron-up' : 'chevron-down'} 
@@ -23,7 +23,7 @@ export default function Dropdown ({title, children, ...restProps}) {
 
             </Header>
 
-            <Body isActive={isActive}>
+            <Body className={'dropdown__body'} isActive={isActive}>
                 
                 {children}
 

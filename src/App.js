@@ -5,6 +5,7 @@ import * as ROUTES from './constants/routes'
 
 import Home from './pages/home'
 import House from './pages/house'
+import About from './pages/about'
 import NotFound from './pages/notFound'
 
 export default function App () {
@@ -16,6 +17,8 @@ export default function App () {
                 <Route exact path={ROUTES.HOME} element={<Home/>} />
 
                 <Route path={ROUTES.HOUSE + '/:id'} element={<House/>} />
+
+                <Route exact path={ROUTES.ABOUT} element={<About/>} />
 
                 <Route path="*" element={<NotFound/>} />
 
