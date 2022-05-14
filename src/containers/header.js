@@ -1,16 +1,13 @@
-import styled from 'styled-components'
-
 import Logo from "../components/logo"
 import Navbar  from "../components/navbar"
 import * as ROUTES from '../constants/routes'
 
-const Container = styled.header``
 
 export default function Header () {
 
     return (
 
-        <Container> 
+        <header> 
 
             <Navbar>
 
@@ -25,7 +22,7 @@ export default function Header () {
 
              </Navbar>
 
-        </Container>
+        </header>
 
     )
 

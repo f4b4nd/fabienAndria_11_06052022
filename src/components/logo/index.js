@@ -1,4 +1,4 @@
-import whiteLogo from '../../assets/logo/kasa_white.png'
+import blackLogo from '../../assets/logo/kasa_black.png'
 import redLogo from '../../assets/logo/kasa_red.png'
 
 import { Container, StyledLink, Icon } from './style'
@@ -7,7 +7,7 @@ export default function Logo({color, to}) {
     return (
         <Container> 
             <StyledLink color={color} to={to} > 
-                K <Icon src={color === 'red' ? redLogo : whiteLogo}/> sa  
+                <Icon src={color === 'red' ? redLogo : blackLogo}/>
             </StyledLink>     
         </Container>
     )

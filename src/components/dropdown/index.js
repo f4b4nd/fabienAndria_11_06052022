@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import { Container, Header, Title, Body, Text, List, ItemList } from "./style"
+import { Container, Group, Header, Title, Body, Text, List, ItemList } from "./style"
 import Chevron from "../chevron"
 
 
@@ -11,7 +11,7 @@ export default function Dropdown ({title, children}) {
     return (
         <Container>
 
-            <Header> 
+            <Header>
 
                 <Title> {title} </Title>
 
@@ -34,6 +34,9 @@ export default function Dropdown ({title, children}) {
 
 }
 
+Dropdown.Group = function ({children, ...restProps}) {
+    return <Group {...restProps}> {children} </Group>
+}
 
 Dropdown.TextContent = function ({children}) {
     return <Text> {children} </Text>

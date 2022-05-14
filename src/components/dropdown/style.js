@@ -4,6 +4,10 @@ import { COLORS } from '../../constants'
 
 export const Container = styled.div``
 
+export const Group = styled.div`
+    display: flex;
+`
+
 export const Header = styled.div`
     display: flex;
     align-items: center;
