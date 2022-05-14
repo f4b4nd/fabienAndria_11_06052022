@@ -23,11 +23,11 @@ export const Group = styled.div`
 `
 
 export const Container = styled.article`
-    display: flex;
-    flex-direction: column;
+    position: relative;
     border-radius: 10px;
     background: ${COLORS.red};
     height: 200px;
+    overflow: hidden;
 `
 
 export const StyledLink = styled(Link)`
@@ -35,6 +35,17 @@ export const StyledLink = styled(Link)`
     color: black;
 `
 
+export const Image = styled.img`
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+`
+
 export const Title = styled.p`
-    font-size: 1.5em;
+    position: absolute;
+    font-size: 1.1em;
+    color: white;
+    bottom: 1%;
+    left: 10px;
+    max-width: 45%;
 `

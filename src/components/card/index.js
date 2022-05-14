@@ -1,8 +1,8 @@
-import { Group, Container, StyledLink, Title } from "./style"
+import { Group, Container, StyledLink, Image, Title } from "./style"
 
 export default function Card({children, ...restProps}) {
     return (
-        <Container {...restProps}> {children} </Container>
+        <Container className={'card'} {...restProps}> {children} </Container>
     )
 }
 
@@ -14,6 +14,10 @@ Card.Link = function ({children, ...restProps}) {
     return <StyledLink {...restProps}> {children} </StyledLink>
 }
 
+Card.Image = function ({...restProps}) {
+    return <Image {...restProps} />
+}
+
 Card.Title = function ({children}) {
-    return <Title> {children} </Title>
+    return <Title className={'card__title'}> {children} </Title>
 }

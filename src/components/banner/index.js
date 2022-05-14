@@ -3,7 +3,7 @@ import { Container, Image, Text } from './style.js'
 export default function Banner ({src, alt, children}) {
 
     return (
-        <Container className={'image-box'}>
+        <Container className={'banner'}>
 
             <Image src={src} alt={alt} />
 

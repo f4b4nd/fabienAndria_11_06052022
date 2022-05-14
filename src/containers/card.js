@@ -12,7 +12,9 @@ export default function CardContainer ({cards}) {
 
                     <Card.Link to={ROUTES.HOUSE + '/' + house.id}> 
 
-                        <Card.Title> {house.title} </Card.Title>
+                        <Card.Image src={house.cover || ''}/>
+                        
+                        <Card.Title> {house.title || ''} </Card.Title>
 
                     </Card.Link>
 

@@ -2,7 +2,7 @@ import { Container, Column, StyledLink } from "./style"
 
 export default function Navbar ({children}) {
     return (
-        <Container> {children}  </Container>
+        <Container className={'navbar'}> {children}  </Container>
     )
 }
 
