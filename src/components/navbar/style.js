@@ -12,5 +12,10 @@ export const Container = styled.nav`
 export const Column = styled.div``
 
 export const StyledLink = styled(Link)`
-    color: ${COLORS.red}
+    color: ${COLORS.red};
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 `

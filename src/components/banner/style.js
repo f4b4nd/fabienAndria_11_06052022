@@ -17,6 +17,7 @@ export const Text = styled.span`
     color: white;
     font-size: 2em;
     position: absolute;
-    top: 30%;
-    left: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 `

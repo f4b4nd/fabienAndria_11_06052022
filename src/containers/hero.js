@@ -10,6 +10,17 @@ export default function HeroContainer({house}) {
 
     return (
         <>  
+
+            <p> Title {house.title} </p>
+            
+            <p>  Location {house.location} </p>
+
+            <UserCard name={house.host?.name || ''} src={house.host?.picture || ''} />
+
+            <Star.Group>
+                <Star.Items rating={house.rating} />
+            </Star.Group>
+
             <Tag.Group>
                 {tags.map(tag => <Tag key={tag}> {tag} </Tag>)}
             </Tag.Group>
@@ -30,16 +41,8 @@ export default function HeroContainer({house}) {
 
             </Dropdown.Group>
 
-            <p> Title {house.title} </p>
-            
-            <UserCard name={house.host?.name || ''} src={house.host?.picture || ''} />
 
-            <Star.Group>
-                <Star.Items rating={house.rating} />
-            </Star.Group>
             
-            <p>  Description {house.description} </p>
-            <p>  Location {house.location} </p>
 
         </>
     )
