@@ -1,5 +1,6 @@
 import Dropdown from "../components/dropdown"
 import Tag from "../components/tag"
+import Star from "../components/star"
 
 export default function HeroContainer({house}) {
 
@@ -29,9 +30,15 @@ export default function HeroContainer({house}) {
             </Dropdown.Group>
 
             <p>  Title {house.title} </p>
+
+            <Star.Group>
+                <Star.Items rating={house.rating} />
+            </Star.Group>
+
             <p>  Description {house.description} </p>
             <p>  Location {house.location} </p>
             <p>  Rating {house.rating} </p>
+
         </>
     )
 }
