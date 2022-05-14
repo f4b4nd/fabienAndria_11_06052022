@@ -6,6 +6,7 @@ import FooterContainer from "../containers/footer"
 import GalleryContainer from "../containers/gallery"
 import HeroContainer from "../containers/hero"
 
+
 export default function House () {
 
     const { id } = useParams()
@@ -25,6 +26,7 @@ export default function House () {
             <HeroContainer house={house} />
 
             <FooterContainer />
+        
         </>
     )
 }

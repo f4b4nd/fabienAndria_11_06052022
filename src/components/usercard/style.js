@@ -7,7 +7,7 @@ export const Container = styled.div`
 `
 
 export const Name = styled.span`
-    color: ${COLORS.red}
+    color: ${COLORS.red};
 `
 
 export const Image = styled.img`
