@@ -7,8 +7,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Hosting :
 
-This project is hosted on Github Pages, by using [gh-pages](https://www.npmjs.com/package/gh-pages) library.
+This project is hosted with Heroku.
 
-This site is currently hosted at URL :
+This site is currently available at URL :
 
-[https://f4b4nd.github.io/fabienAndria_11_06052022](https://f4b4nd.github.io/fabienAndria_11_06052022)
+[https://kasa-ocr.herokuapp.com/](https://kasa-ocr.herokuapp.com/)
