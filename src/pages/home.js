@@ -8,7 +8,7 @@ import Image from '../assets/images/landscape-rock.png'
 
 export default function Home () {
 
-    const { houses } = useContent('houses')
+    const houses = useContent({})
 
     return (
         <>  

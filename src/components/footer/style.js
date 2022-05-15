@@ -8,10 +8,12 @@ export const Container = styled.footer`
 export const Column = styled.div`
     display: flex;
     flex-direction: column;
+    row-gap: 1em;
     justify-content: center;
     align-items: center;
 `
 
 export const Text = styled.p`
-    font-size: 1.1em;
+    font-size: 0.9em;
+    margin: 0;
 `

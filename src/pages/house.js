@@ -1,6 +1,7 @@
 import { useParams } from "react-router"
 import useContent from '../hooks/useContent'
 
+
 import HeaderContainer  from '../containers/header'
 import FooterContainer from "../containers/footer"
 import Carousel from "../components/carousel"
@@ -10,12 +11,12 @@ import HeroContainer from "../containers/hero"
 export default function House () {
 
     const { id } = useParams()
-    const { houses } = useContent('houses')
-
-    const house = houses.find(house => house.id === id) || {}
+    const house = useContent({filterID: id})
 
     return (
+
         <>
+
             <HeaderContainer />
 
             <main className="house">
@@ -28,7 +29,7 @@ export default function House () {
             </main>
 
             <FooterContainer />
-        
+
         </>
     )
 }

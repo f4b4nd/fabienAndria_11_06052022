@@ -27,9 +27,9 @@ button {
     border: none;
 }
 
-/* CUSTOM */
+/******** CUSTOM ********/
 
-header, footer, main.house, main.about {
+header, footer, main {
     padding: 1em;
 }
 
@@ -52,35 +52,35 @@ main.not-found a:visited {
     text-decoration: underline;
 }
 
-.group {
+.house-detail {
     display: flex;
     justify-content: space-between;
     margin: 1em 0;
 }
 
-.group .col {
+.house-detail .col {
     display: flex;
     flex-direction: column;
     row-gap: 1em;
 }
 
-.group h1, .group h2 {
+.house-detail h1, .house-detail h2 {
     color: #FF6060;
     margin: 0;
 }
 
-.group h1 {
+.house-detail h1 {
     font-size: 1.2em;
     width: 80%;
 }
 
-.group h2 {
+.house-detail h2 {
     font-size: 1.1em;
     font-weight: normal;
 }
 
 @media screen and (max-width: 767px) {
-    .group {
+    .house-detail {
         flex-direction: column;
         row-gap: 1em;
     }
@@ -89,5 +89,11 @@ main.not-found a:visited {
 main.about {
     display: flex;
     flex-direction: column;
+    align-items: center;
     row-gap: 1em;
+}
+
+main.about .dropdowns {
+    max-width: 500px;
+    width: 100%;
 }

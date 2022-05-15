@@ -35,15 +35,25 @@ export const Title = styled.span``
 export const Body = styled.div`
     display: ${({isActive}) => isActive ? 'block' : 'none'};
     
-    padding: 1em;
+    padding: 1.5em;
     color: ${COLORS.red};
     background-color: ${COLORS.lightgrey} ;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+
+    font-size: 0.7em;
+
 `
 
-export const Text = styled.p``
+export const Text = styled.p`
+    margin: 0;
+`
 
-export const List = styled.ul``
+export const List = styled.ul`
+    margin: 0;
+    padding: 0;
+`
 
-export const ItemList = styled.li``
+export const ItemList = styled.li`
+    margin: 0;
+`

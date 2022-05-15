@@ -15,7 +15,7 @@ export default function About () {
 
                 <Banner src={Image} alt={'banner image'} /> 
                 
-                <Dropdown.Group flexDirection={'column'} >
+                <Dropdown.Group className="dropdowns" flexDirection={'column'} >
 
                     <Dropdown title={'Fiabilité'} width={'100%'}> 
                         <Dropdown.TextContent>

@@ -8,23 +8,15 @@ export default function Carousel ({images, alt}) {
     const [imageIndex, setImageIndex] = useState(0)
 
     const handleClickLeftArrow = () => {
-
-        if (images.length <= 1) return
-
         const lastIndex = images.length - 1
         const previousIndex = imageIndex === 0 ? lastIndex : imageIndex - 1
         setImageIndex(previousIndex)
-    
     }
 
     const handleClickRightArrow = () => {
-
-        if (images.length <= 1) return
-
         const lastIndex = images.length - 1
         const nextIndex = imageIndex === lastIndex ? 0 : imageIndex + 1
         setImageIndex(nextIndex)
-    
     }
 
     return (
@@ -66,10 +58,10 @@ Carousel.RightArrow = function ({...restProps}) {
 
 Carousel.IndexIndicator = function ({imageIndex, imagesCount}) {
 
-    const displayedIndex = imageIndex < imagesCount ? imageIndex + 1 : imagesCount
+    const displayedImageIndex = imageIndex < imagesCount ? imageIndex + 1 : imagesCount
 
     return (
-        <IndexIndicator> {displayedIndex} / {imagesCount} </IndexIndicator>
+        <IndexIndicator> {displayedImageIndex} / {imagesCount} </IndexIndicator>
     )
 
 }

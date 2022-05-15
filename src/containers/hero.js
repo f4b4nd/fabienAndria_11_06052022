@@ -10,7 +10,7 @@ export default function HeroContainer({house}) {
 
     return (
         <>  
-            <div className="group">
+            <div className="house-detail">
 
                 <div className="col">
 
@@ -37,11 +37,11 @@ export default function HeroContainer({house}) {
 
             <Dropdown.Group className="dropdowns">
 
-                <Dropdown title="Description" width={'50%'} >
+                <Dropdown title="Description" width="50%" >
                     <Dropdown.TextContent> {house.description} </Dropdown.TextContent>
                 </Dropdown>
                 
-                <Dropdown title="Equipements" width={'50%'} >
+                <Dropdown title="Equipements" width="50%" >
                     <Dropdown.ListContent>
                         {equipments.map(equipment => (
                             <Dropdown.ItemList key={equipment}> {equipment} </Dropdown.ItemList>
