@@ -11,12 +11,13 @@ export const Container = styled.nav`
 
 export const Column = styled.div`
     display: flex;
-    column-gap: 0.5em;
+    column-gap: 1em;
 `
 
 export const StyledLink = styled(Link)`
     color: ${COLORS.red};
     text-decoration: none;
+    font-size: 1.5em;
 
     &:hover {
         text-decoration: underline;

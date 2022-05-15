@@ -26,7 +26,7 @@ export const Container = styled.article`
     position: relative;
     border-radius: 10px;
     background: ${COLORS.red};
-    height: 200px;
+    height: 300px;
     overflow: hidden;
 `
 
@@ -43,7 +43,7 @@ export const Image = styled.img`
 
 export const Title = styled.p`
     position: absolute;
-    font-size: 1.1em;
+    font-size: 1.3em;
     color: white;
     bottom: 1%;
     left: 10px;

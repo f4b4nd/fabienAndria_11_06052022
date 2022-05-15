@@ -11,4 +11,4 @@ This project is hosted with Heroku.
 
 This site is currently available at URL :
 
-[https://kasa-ocr.herokuapp.com/](https://kasa-ocr.herokuapp.com/)
+[https://kasa-fandria.herokuapp.com/](https://kasa-fandria.herokuapp.com/)

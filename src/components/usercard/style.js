@@ -5,11 +5,12 @@ import { COLORS } from '../../constants'
 export const Container = styled.div`
     display: flex;
     align-items: center;
-    column-gap: 0.5em;
+    column-gap: 1em;
 `
 
 export const Name = styled.span`
     color: ${COLORS.red};
+    font-size: 1.4em;
 `
 
 export const Image = styled.img`
@@ -18,8 +19,8 @@ export const Image = styled.img`
 `
 
 export const ImageContainer = styled.div`
-    height: 40px;
-    width: 40px;
+    height: 70px;
+    width: 70px;
     overflow: hidden;
     border-radius: 50%;
 `

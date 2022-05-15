@@ -17,7 +17,7 @@ export default function Dropdown ({title, children, ...restProps}) {
 
                 <Chevron 
                     className={isActive ? 'chevron-up' : 'chevron-down'} 
-                    size={'15px'} 
+                    size={'20px'} 
                     onClick={() => setIsActive(!isActive)} 
                 />
 

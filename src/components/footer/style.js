@@ -14,6 +14,6 @@ export const Column = styled.div`
 `
 
 export const Text = styled.p`
-    font-size: 0.9em;
+    font-size: 1.2em;
     margin: 0;
 `

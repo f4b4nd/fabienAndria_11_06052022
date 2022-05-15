@@ -30,7 +30,9 @@ export const Header = styled.div`
     background-color: ${COLORS.red};
     color: white;
 `
-export const Title = styled.span``
+export const Title = styled.span`
+    font-size: 1.4em;
+`
 
 export const Body = styled.div`
     display: ${({isActive}) => isActive ? 'block' : 'none'};
@@ -41,7 +43,7 @@ export const Body = styled.div`
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 
-    font-size: 0.7em;
+    font-size: 1.1em;
 
 `
 

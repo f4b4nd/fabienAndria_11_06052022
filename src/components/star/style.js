@@ -8,6 +8,6 @@ export const Group = styled.div`
 `
 
 export const Image = styled.img`
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
 `

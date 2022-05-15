@@ -8,7 +8,7 @@ export const Container = styled.div`
 
 export const Inner = styled.div`
     width: 100%;
-    height: 300px;
+    height: 400px;
     overflow: hidden;
     border-radius: 20px;
     position: relative;
@@ -45,6 +45,6 @@ export const IndexIndicator = styled.span`
     bottom: 1%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 1em;
+    font-size: 1.2em;
     color: white;
 `

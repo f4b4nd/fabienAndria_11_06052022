@@ -14,14 +14,17 @@ export default function Home () {
         <>  
             <HeaderContainer />
 
-            <Banner src={Image} alt={'banner image'}> 
-                
-                <Banner.Text> Chez vous, partout et ailleurs </Banner.Text>
+            <main className="home">
 
-            </Banner>
+                <Banner src={Image} alt={'banner image'}> 
+                    
+                    <Banner.Text> Chez vous, partout et ailleurs </Banner.Text>
 
-            <CardContainer cards={houses} />
+                </Banner>
 
+                <CardContainer cards={houses} />
+
+            </main>
             <FooterContainer />
         </>
     )

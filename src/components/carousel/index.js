@@ -24,13 +24,13 @@ export default function Carousel ({images, alt}) {
 
             <Inner> 
 
-                {images.length > 1 && <Carousel.LeftArrow onClick={handleClickLeftArrow} size={'30px'} />}
+                {images.length > 1 && <Carousel.LeftArrow onClick={handleClickLeftArrow} size={'40px'} />}
                 
                 <Image src={images[imageIndex]} alt={alt} />
                 
                 <Carousel.IndexIndicator imageIndex={imageIndex} imagesCount={images.length}/>
                 
-                {images.length > 1 && <Carousel.RightArrow onClick={handleClickRightArrow} size={'30px'} />}
+                {images.length > 1 && <Carousel.RightArrow onClick={handleClickRightArrow} size={'40px'} />}
 
             </Inner>
             
