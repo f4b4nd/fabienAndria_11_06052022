@@ -11,7 +11,7 @@ import HeroContainer from "../containers/hero"
 export default function House () {
 
     const { id } = useParams()
-    const house = useContent({filterID: id})
+    const house = useContent({filterDataID: id})
 
     return (
 

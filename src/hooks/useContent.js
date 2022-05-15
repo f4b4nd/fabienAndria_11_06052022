@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 
 import * as ROUTES from '../constants/routes'
 
-export default function useContent ({filterID}) {
+export default function useContent ({filterDataID}) {
     
     const [content, setContent] = useState([])
     const navigate = useNavigate()
@@ -19,19 +19,23 @@ export default function useContent ({filterID}) {
         }
             })
             .then(response => response.json())
-            .then(data => {
-                if (filterID) {
-                    const match = data.find(house => house.id === filterID) || false
+            .then(datas => {
+
+                if (filterDataID) {
+
+                    const match = datas.find(data => data.id === filterDataID) || false
+
                     if (match) {
                         setContent(match)
-                    } 
+                    }
                     else {
                         navigate(ROUTES.NOT_FOUND_404)
                     }
+                    return
                 }
-                else {
-                    setContent(data)
-                }
+
+                setContent(datas)
+
             })
             .catch((error) => {
                 console.log(error.message)
