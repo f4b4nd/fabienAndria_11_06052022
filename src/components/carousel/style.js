@@ -14,7 +14,7 @@ export const Inner = styled.div`
     position: relative;
 
     @media screen and (max-width: ${BREAKPOINTS['sm-max-width']}) {
-        height: 200px;
+        height: 300px;
     }
 `
 

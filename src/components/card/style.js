@@ -19,6 +19,7 @@ export const Group = styled.div`
     @media screen and (max-width: ${BREAKPOINTS['sm-max-width']}) {
         background-color: transparent;
         grid-template-columns: 1fr;
+        padding: 0;
     }
 `
 
