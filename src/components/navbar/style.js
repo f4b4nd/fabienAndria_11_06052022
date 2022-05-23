@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-import { COLORS } from '../../constants'
+import { BREAKPOINTS, COLORS } from '../../constants'
 
 export const Container = styled.nav`
     display: flex;
@@ -21,5 +21,8 @@ export const StyledLink = styled(Link)`
 
     &:hover {
         text-decoration: underline;
+    }
+    @media screen and (max-width: ${BREAKPOINTS['sm-max-width']}) {
+        text-transform: uppercase ;
     }
 `

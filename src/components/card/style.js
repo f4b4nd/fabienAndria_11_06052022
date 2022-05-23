@@ -10,7 +10,8 @@ export const Group = styled.div`
     grid-gap: 2.5em;
 
     background-color: ${COLORS.lightgrey};
-    padding: 2em 1em;
+    padding: 2em;
+    border-radius: 10px;
 
     @media screen and (min-width: ${BREAKPOINTS['md-min-width']}) and (max-width: ${BREAKPOINTS['lg-max-width']}) {
         grid-template-columns: repeat(2, 1fr);
