@@ -24,5 +24,6 @@ export const StyledLink = styled(Link)`
     }
     @media screen and (max-width: ${BREAKPOINTS['sm-max-width']}) {
         text-transform: uppercase ;
+        font-size: 1.3em;
     }
 `
