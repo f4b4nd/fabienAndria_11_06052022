@@ -14,7 +14,7 @@ export const Container = styled.div`
 export const Group = styled.div`
     display: flex;
     ${({flexDirection}) => flexDirection && `flex-direction : ${flexDirection}`};
-    gap: 1em;
+    gap: 2em 1em;
 
     @media screen and (max-width: ${BREAKPOINTS['sm-max-width']}) {
         flex-direction: column;
